@@ -41,7 +41,9 @@
 	pre, code, form, fieldset, legend, input, textarea,
 	p, blockquote, th, td, nav, header, main, footer, article, 
 	aside, details, figcaption, figure, mark, section, summary,
-	time, xmp, hr, p, button
+	time, xmp, hr, p, button,
+	input::-webkit-file-upload-button,
+	input::-webkit-inner-spin-button
 {
 	font-style: normal;
 	font-weight: normal;
@@ -56,6 +58,11 @@
 	border: none;
 	border-spacing: 0;
 	color: inherit;
+}
+
+	input::-webkit-calendar-picker-indicator
+{
+	display: none;
 }
 
 	*:focus
